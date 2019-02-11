@@ -73,29 +73,14 @@ function game(userChoice){
                 draw(userChoice);
         }
     
-    if (compScore + userScore >= 5) {
-        if (userScore > compScore) {
-            setTimeout(function () {var newgame = alert("You Won! Time for a new round.") }, 600);
-            setTimeout(function () {
-                userScore = 0;
-                compScore = 0;
-                userScore_span.innerHTML=userScore;
-                compScore_span.innerHTML=compScore;
-                 }, 1000);
-        }
-        if (compScore > userScore) {
-            setTimeout(function () {var newgame = alert("You Lost! Time for a new round.") }, 600);
-            setTimeout(function () {
-                userScore = 0;
-                compScore = 0;
-                userScore_span.innerHTML=userScore;
-                compScore_span.innerHTML=compScore;
-                 }, 1000);
+    if (compScore + userScore == 5) {
+        setTimeout(function(){var newgame = confirm("Would you like a new game?")}, 1000);
+        if (newgame == 1){
+        userScore=0;
+        compScore=0;
         }
     }
 }
-
-    
 
 function main(){
 
@@ -110,7 +95,7 @@ function main(){
     scissors_div.addEventListener('click', function () {
         game("s");
     });
-       
+    
 }
 
 main();
