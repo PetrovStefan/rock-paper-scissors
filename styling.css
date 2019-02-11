@@ -21,6 +21,7 @@ body{
     border:2px solid;
     width:200px;
     margin:30px auto;
+    margin-bottom: 15px;
     border-radius:5px;
     position:relative;
     padding:15px;
@@ -32,6 +33,8 @@ body{
     text-align:center;
     background-color: darkcyan;
     position:absolute;
+    border-radius:10px;
+    
 }
 
 #user{
@@ -46,6 +49,10 @@ body{
 
 .theScores{
     font-size:60px;
+}
+
+.result{
+    margin-top:25px;
 }
 
 .result>p{
@@ -70,3 +77,23 @@ body{
     top:0px;
     left:49%;
 }
+
+.choice{
+    display:inline-block;
+    margin:0 30px;
+    width:180px;
+    height:180px;
+    vertical-align:middle;
+    position:relative;
+}
+
+.choices{
+    text-align:center;
+    margin-top:40px;
+}
+
+#message{
+    margin:30px 0;
+    text-align:center;
+}
+
