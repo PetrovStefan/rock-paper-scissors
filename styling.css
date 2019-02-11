@@ -80,11 +80,12 @@ body{
 
 .choice{
     display:inline-block;
-    margin:0 30px;
+    margin:0 40px 10px 40px;
     width:180px;
     height:180px;
-    vertical-align:middle;
     position:relative;
+    border: 1px solid;
+    border-radius:50%;
 }
 
 .choices{
@@ -95,5 +96,11 @@ body{
 #message{
     margin:30px 0;
     text-align:center;
+    font-weight: bolder;
+}
+
+.choice > img{
+    position:relative;
+    bottom:-15px;
 }
 
